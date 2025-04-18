@@ -129,6 +129,7 @@ section:nth-child(even) {
   max-width: 100%;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 #hero::before {
@@ -141,6 +142,7 @@ section:nth-child(even) {
   background: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"%3E%3Cpolygon fill="rgba(255,255,255,0.05)" points="0,100 100,0 100,100"/%3E%3C/svg%3E');
   background-size: cover;
   opacity: 0.3;
+  pointer-events: none;
 }
 
 #hero h2 {
@@ -234,8 +236,7 @@ section:nth-child(even) {
   align-items: center;
   background-color: var(--card-bg);
   border-radius: 15px;
-  padding: 2rem;
-  box-shadow: var(--box-shadow);
+  padding: 2rem;f
 }
 
 
@@ -557,6 +558,8 @@ footer {
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+    position: relative;
+  z-index: 2;
   }
   
   .resume-container {
